@@ -1,0 +1,56 @@
+{
+  "name": "opencode-easel",
+  "version": "0.1.0",
+  "description": "Charts for OpenCode conversations: line, columns, bars, sparks, share and pie forms, with automatic MCP metrics charts.",
+  "type": "module",
+  "license": "MIT",
+  "author": "KURANOV07",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KURANOV07/opencode-easel.git"
+  },
+  "homepage": "https://github.com/KURANOV07/opencode-easel#readme",
+  "bugs": {
+    "url": "https://github.com/KURANOV07/opencode-easel/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "easel",
+    "charts",
+    "tui",
+    "terminal",
+    "metrics",
+    "prometheus",
+    "datadog",
+    "grafana"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./tui": "./src/tui.tsx",
+    "./rpc": "./src/rpc.ts",
+    "./core": "./src/core/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@opencode/plugin": "^2.3.2"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.6.6",
+    "@opentui/solid": ">=0.6.6",
+    "solid-js": ">=1.9.0"
+  },
+  "peerDependenciesMeta": {
+    "@opentui/core": {
+      "optional": true
+    },
+    "@opentui/solid": {
+      "optional": true
+    },
+    "solid-js": {
+      "optional": true
+    }
+  }
+}
