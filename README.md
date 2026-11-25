@@ -520,14 +520,20 @@ Right after server startup RPC may not be registered yet (registration is asynch
 
 ## 8. Installation and update
 
-### Install with OpenCode
+### npm package
 
 ```sh
-opencode plugin add github:KURANOV07/opencode-easel
+opencode plugin add opencode-easel
 ```
 
 OpenCode reads the package `exports` (`.`, `./tui`, `./rpc`) and loads every part. The package ships TypeScript
 sources (`src/`); the entry points are `src/index.ts`, `src/tui.tsx` and `src/rpc.ts`.
+
+### From GitHub
+
+```sh
+opencode plugin add github:KURANOV07/opencode-easel
+```
 
 ### Local copy
 
@@ -562,7 +568,7 @@ opencode api post /api/rpc/easel/status --data '{"input":{}}'
 With a package install:
 
 ```sh
-opencode plugin update github:KURANOV07/opencode-easel
+opencode plugin update
 ```
 
 With a local copy:
@@ -1161,14 +1167,20 @@ opencode api post /api/rpc/easel/configSet \
 
 ## 8. Установка и обновление
 
-### Установка через OpenCode
+### Пакет в npm
 
 ```sh
-opencode plugin add github:KURANOV07/opencode-easel
+opencode plugin add opencode-easel
 ```
 
 OpenCode читает `exports` пакета (`.`, `./tui`, `./rpc`) и загружает все его части. В пакет входят
 TypeScript-исходники (`src/`); входные точки — `src/index.ts`, `src/tui.tsx` и `src/rpc.ts`.
+
+### Из GitHub
+
+```sh
+opencode plugin add github:KURANOV07/opencode-easel
+```
 
 ### Локальная копия
 
@@ -1203,7 +1215,7 @@ opencode api post /api/rpc/easel/status --data '{"input":{}}'
 Установка из пакета:
 
 ```sh
-opencode plugin update github:KURANOV07/opencode-easel
+opencode plugin update
 ```
 
 Локальная копия:

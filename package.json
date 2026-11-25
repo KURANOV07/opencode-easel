@@ -1,6 +1,6 @@
 {
   "name": "opencode-easel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Charts for OpenCode conversations: line, columns, bars, sparks, share and pie forms, with automatic MCP metrics charts.",
   "type": "module",
   "license": "MIT",
